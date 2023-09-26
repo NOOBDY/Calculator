@@ -185,15 +185,150 @@
     <div class="data">
       <Data id="ReviewPalData">
         <CodeReview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-          <Reviews />
+          <Reviews>
+            <Smell>
+              <Id>1</Id>
+              <SmellType>Unsuitable naming(名不符實)-_subtractionButton(subtraction)</SmellType>
+              <HashCode>UnsuitableNaming.Form1._subtractionButton._subtractionButton</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>Form1.Designer.cs</File>
+              <Line>282</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>2</Id>
+              <SmellType>Unsuitable naming(名不符實)-_multiplicationButton(multiplication)</SmellType>
+              <HashCode>UnsuitableNaming.Form1._multiplicationButton._multiplicationButton</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>Form1.Designer.cs</File>
+              <Line>283</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>3</Id>
+              <SmellType>Literal constants(字面常數)-"{0} {1}"</SmellType>
+              <HashCode>LiteralConstants.AppendNumber."{0} {1}"</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>4</Id>
+              <SmellType>Unsuitable naming(名不符實)-Subtraction(subtraction)</SmellType>
+              <HashCode>UnsuitableNaming.Operator.Subtraction.Subtraction</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>8</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>5</Id>
+              <SmellType>Unsuitable naming(名不符實)-Multiplication(multiplication)</SmellType>
+              <HashCode>UnsuitableNaming.Operator.Multiplication.Multiplication</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>9</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>6</Id>
+              <SmellType>Unsuitable naming(名不符實)-AppendNumber(append)</SmellType>
+              <HashCode>UnsuitableNaming.State.AppendNumber.AppendNumber</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>7</Id>
+              <SmellType>ICS(函式-2)</SmellType>
+              <HashCode>Method2.State.AppendNumber</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(函式-2) 每個函式表示一種操作，因此一律使用動詞做為第一個單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>8</Id>
+              <SmellType>Long method(過長函式)</SmellType>
+              <HashCode>LongMethod.State.Evaluate.22</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>22</Weight>
+              <Project>Calculator</Project>
+              <File>State.cs</File>
+              <Line>86</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+          </Reviews>
           <HashCodeIgnoreList />
-          <HashCodeRequestIgnoreList />
+          <HashCodeRequestIgnoreList>
+            <string>LongMethod.State.Evaluate.22</string>
+            <string>LiteralConstants.AppendNumber."{0} {1}"</string>
+            <string>UnsuitableNaming.Operator.Subtraction.Subtraction</string>
+            <string>UnsuitableNaming.Operator.Multiplication.Multiplication</string>
+            <string>UnsuitableNaming.State.AppendNumber.AppendNumber</string>
+          </HashCodeRequestIgnoreList>
           <AnalysisFileManager>
             <AnalysisFiles>
               <AnalysisFile>
                 <RelativePath>Form1.cs</RelativePath>
                 <ProjectName>Calculator</ProjectName>
-                <AnalysisFileType>Model</AnalysisFileType>
+                <AnalysisFileType>ViewOrController</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Form1.Designer.cs</RelativePath>
@@ -220,9 +355,14 @@
                 <ProjectName>Calculator</ProjectName>
                 <AnalysisFileType>Designer</AnalysisFileType>
               </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State.cs</RelativePath>
+                <ProjectName>Calculator</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>0</ProductionLoc>
+          <ProductionLoc>583</ProductionLoc>
           <TestLoc>0</TestLoc>
         </CodeReview>
       </Data>
